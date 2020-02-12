@@ -1,0 +1,87 @@
+{
+  "name": "REGIONALE-ERNTE",
+  "version": "6.4.0",
+  "keyword": "fashion, shop fashion, order clothes from home, online shoping",
+  "description": "REGIONALE-ERNTE",
+  "author": "regionaleernte.de",
+  "private": true,
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "4000"
+    }
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nuxt --spa",
+    "prod": "run-s build copy",
+    "start": "cross-env NODE_ENV=production nuxt start --spa",
+    "generate": "nuxt generate",
+    "build": "nuxt build --spa",
+    "copy": "node copy-dist-files.js"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.5.4",
+    "@nuxtjs/component-cache": "^1.1.5",
+    "@nuxtjs/dotenv": "^1.3.0",
+    "@nuxtjs/google-analytics": "^2.2.0",
+    "@nuxtjs/proxy": "^1.3.3",
+    "@nuxtjs/pwa": "^2.5.0",
+    "cookie-universal-nuxt": "^2.0.16",
+    "cross-env": "^5.1.4",
+    "lru-cache": "^4.1.5",
+    "material-icons": "^0.2.3",
+    "moment": "^2.24.0",
+    "node-sass": "^4.12.0",
+    "nuxt": "^1.4.5",
+    "nuxt-client-init-module": "^0.1.3",
+    "nuxt-robots-module": "^1.5.1",
+    "nuxt-stripe-module": "^2.0.0",
+    "nuxt-validate": "^0.1.3",
+    "sass-loader": "^7.1.0",
+    "socket.io-client": "^2.2.0",
+    "v-tooltip": "^2.0.2",
+    "vee-validate": "^2.2.11",
+    "vue": "^2.6.10",
+    "vue-analytics": "^5.17.0",
+    "vue-carousel": "^0.18.0",
+    "vue-dragscroll": "^1.10.0",
+    "vue-i18n": "^8.11.2",
+    "vue-infinite-scroll": "^2.0.2",
+    "vue-lazyload": "^1.3.1",
+    "vue-slider-component": "^2.8.16",
+    "vue-star-rating": "^1.6.1",
+    "vue-stripe-elements-plus": "^0.2.10",
+    "vue-sweetalert2": "^1.6.4",
+    "vue2-google-maps": "^0.9.7",
+    "vuetify": "^1.5.16",
+    "webfontloader": "^1.6.28"
+  },
+  "devDependencies": {
+    "@nuxtjs/feed": "^0.1.1",
+    "@nuxtjs/sitemap": "^0.1.2",
+    "@nuxtjs/webpackmonitor": "^0.1.0",
+    "copy-dir": "^0.4.0",
+    "glob-all": "^3.1.0",
+    "jquery": "^3.4.1",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "nodemon": "^1.19.1",
+    "npm-run-all": "^4.1.3",
+    "owl.carousel": "^2.3.4",
+    "purgecss-webpack-plugin": "^1.5.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "vue-server-renderer": "^2.6.10",
+    "vue-social-sharing": "^2.4.5",
+    "vuex-persistedstate": "^2.5.4"
+  },
+  "engines": {
+    "node": ">=8.x",
+    "npm": ">=5.x"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

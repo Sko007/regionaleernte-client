@@ -1,0 +1,12 @@
+.env
+node_modules
+npm-debug.log
+yarn-error.log
+.nuxt
+dist
+prod
+sw.*
+.monitor
+static/robots.txt
+.DS_Store
+Thumbs.db

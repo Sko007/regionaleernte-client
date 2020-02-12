@@ -1,0 +1,8 @@
+<svg width="62" height="124" viewBox="0 0 62 124" 
+    xmlns="http://www.w3.org/2000/svg">
+    <title>UI Element/paging_small</title>
+    <g fill="none" fill-rule="evenodd">
+        <path d="M0 124A62 62 0 1 0 0 0" fill="#F43E48"/>
+        <path d="M32.43 45.45l-14.7 15.4 15.23 16.69" stroke="#FFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+</svg>

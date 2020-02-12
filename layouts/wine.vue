@@ -1,0 +1,96 @@
+<template>
+  <v-app>
+    <WineHeader/>
+    <div class="main_content">
+      <nuxt/>
+    </div>
+    <Cart/>
+    <WineFooter/>
+    <div id="cookie_alert_wrapper" v-if="showAlert">
+      <v-layout row wrap>
+        <v-flex xs1 style="text-align: right; padding-right: 10px">
+          <v-icon>warning</v-icon>
+        </v-flex>
+        <v-flex xs10>
+          <p>
+            {{$t('cookie_content')}}
+            <router-link
+              to="/pages/nutzungsbedingungen"
+              @click="closeCookie()"
+            >{{$t('cookie_button')}}</router-link>
+          </p>
+        </v-flex>
+        <v-flex xs1>
+          <v-icon style="cursor: pointer" @click="closeCookie()">close</v-icon>
+        </v-flex>
+      </v-layout>
+    </div>
+  </v-app>
+</template>
+
+<script>
+import WineHeader from "~/components/WineHeader.vue";
+import WineFooter from "~/components/WineFooter.vue";
+import Cart from "~/components/Cart";
+
+export default {
+  data() {
+    return {
+      showAlert: true
+    };
+  },
+
+  components: {
+    WineHeader,
+    WineFooter,
+    Cart
+  },
+  methods: {
+    closeCookie() {
+      this.showAlert = false;
+      localStorage.setItem("cookie_agree", "true");
+    }
+  },
+
+  async mounted() {
+    const cookieAgree = localStorage.getItem("cookie_agree");
+    // console.log(cookieAgree);
+    if (cookieAgree == "true") {
+      this.showAlert = false;
+    }
+  }
+};
+</script>
+
+<style lang="scss">
+@import "../assets/scss/_variables";
+@import "../assets/scss/style";
+
+.main_content {
+  min-height: 500px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: white;
+
+  &.boxed {
+    max-width: 1300px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.15),
+      0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+#cookie_alert_wrapper {
+  position: fixed;
+  z-index: 99999;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  padding-top: 10px;
+  .cookie_content {
+    padding: 10px;
+  }
+}
+</style>
