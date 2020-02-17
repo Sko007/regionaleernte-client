@@ -4,9 +4,13 @@ const pkg = require('./package')
 // const PROXY = (process.env.NODE_ENV === 'production') ? 'meine.regionaleernte.de' : 'http://localhost:3000'
 // const WS_URL = (process.env.NODE_ENV === 'production') ? 'api.regionaleernte.de' : 'http://localhost:9000'
 
-// for dev server
-const PROXY = (process.env.NODE_ENV === 'production') ? 'meine.regionale-ernte.de' : 'http://localhost:3000'
-const WS_URL = (process.env.NODE_ENV === 'production') ? 'api.regionale-ernte.de' : 'http://localhost:9000'
+// // for dev server
+// const PROXY = (process.env.NODE_ENV === 'production') ? 'meine.regionale-ernte.de' : 'http://localhost:3000'
+// const WS_URL = (process.env.NODE_ENV === 'production') ? 'api.regionale-ernte.de' : 'http://localhost:9000'
+
+
+const PROXY = process.env.NODE_ENV 
+const WS_URL = process.env.NODE_ENV 
 
 module.exports = {
   PROXY,
