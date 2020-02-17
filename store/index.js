@@ -142,7 +142,7 @@ export const mutations = {
     state.selectedVendor = payload;
   },
   searchWine(state, payload) {
-    state.searchWine = payload;
+    state.searchWine = payload; react
   },
   userAddress(state, payload) {
     state.userAddress = payload;
