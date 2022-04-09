@@ -30,7 +30,7 @@
     "cross-env": "^5.1.4",
     "lru-cache": "^4.1.5",
     "material-icons": "^0.2.3",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "netlify-cli": "^2.32.0",
     "node-sass": "^4.12.0",
     "nuxt": "^1.4.5",
