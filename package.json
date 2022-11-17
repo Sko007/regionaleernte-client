@@ -33,7 +33,7 @@
     "moment": "^2.24.0",
     "netlify-cli": "^2.32.0",
     "node-sass": "^4.12.0",
-    "nuxt": "^1.4.5",
+    "nuxt": "^3.0.0",
     "nuxt-client-init-module": "^0.1.3",
     "nuxt-robots-module": "^1.5.1",
     "nuxt-stripe-module": "^2.0.0",
